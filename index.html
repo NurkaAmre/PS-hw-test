@@ -17,7 +17,9 @@
   <!-- Header -->
   <header class="header-container">
     <div class="logo">
-      <img src="./assets/logo-icon.png" class="logo" alt="PS.kz" />
+      <a href="/">
+        <img src="./assets/logo-icon.png" class="logo" alt="PS.kz" />
+      </a>
     </div>
     <nav>
       <ul>
@@ -86,7 +88,7 @@
             </div>
             <label for="inputSelectBox" class="input-label">Процессор</label>
           </div>
-          <p class="price">19000 тг/мес</p>
+          <p class="price"><span class="underline"></span>19000 тг/мес</p>
         </div>
         <!-- end of item 1-->
   
@@ -112,7 +114,7 @@
             </div>
             <label for="inputSelectBox" class="input-label">ОЗУ</label>
           </div>
-          <p class="price">19000 тг/мес</p>
+          <p class="price"><span class="underline"></span>19000 тг/мес</p>
         </div>
         <!-- end of item 1-->
         <div class="item">
@@ -137,7 +139,7 @@
             </div>
             <label for="inputSelectBox" class="input-label">Системный диск 1</label>
           </div>
-          <p class="price">19000 тг/мес</p>
+          <p class="price"><span class="underline"></span>19000 тг/мес</p>
         </div>
         <!-- end of item 1-->
         <div class="item">
@@ -156,7 +158,7 @@
             </div>
             <label for="inputSelectBox" class="input-label">Диск 2</label>
           </div>
-          <p class="price">19000 тг/мес</p>
+          <p class="price"><span class="underline"></span>19000 тг/мес</p>
         </div>
         <!-- end of item 1-->
         <div class="item">
@@ -175,7 +177,7 @@
             </div>
             <label for="inputSelectBox" class="input-label">Диск 3</label>
           </div>
-          <p class="price">19000 тг/мес</p>
+          <p class="price"><span class="underline"></span>19000 тг/мес</p>
         </div>
         <!-- end of item 1-->
         <!-- end of item 1-->
@@ -277,7 +279,8 @@
       <p><span>232000</span>тг/мес</p>
     </section>
     <!-- end of server section-->
-    <button class="btn">Довабить сервер</button>
+    <button class="btn" type="button">Довабить сервер</button>
+    <!-- IP-address-section -->
     <section class="IP-address-section">
       <h1>Блок IP-адресов</h1>
       <div class="grid-container">
@@ -298,7 +301,7 @@
                 4 IP-адреса
               </option>
             </select>
-            <div class="select-icon">
+            <div class="select-icon2">
               <i class="fa-solid fa-chevron-down"></i>
             </div>
             <label for="inputSelectBox" class="input-label">Блок IP-адресов<i class="fa-solid fa-question"></i></label>
@@ -316,7 +319,7 @@
       </div>
       <p><span>4000</span>тг/мес</p>
     </section> <!-- End of IP address -->
-    
+    <!-- Fireware -->
     <section class="fireware-section">
       <h1>Фаервол FortiGate</h1>
       <div class="grid-container">
@@ -331,7 +334,7 @@
                 Заказывать
               </option>
             </select>
-            <div class="select-icon">
+            <div class="select-icon2">
               <i class="fa-solid fa-chevron-down"></i>
             </div>
             <label for="inputSelectBox" class="input-label">Выберите блок<i class="fa-solid fa-question"></i></label>
@@ -340,7 +343,12 @@
       </div>
       <p><span>232000</span>тг/мес</p>
     </section> <!-- End of fireware -->
-    
+    <div class="price-info">
+      <button class="btn active" type="button">Довабить в корзину</button>
+      <p>за<span class="for">415000</span>тг/мес</p>
+      <p class="text3">В стоимость входит подключение к сети Интернет на скорости</br>до 100 Мбит/c, без ограничения объема
+        трафика.</p>
+    </div>
     
     </main> <!-- End of Main -->
 
