@@ -10,6 +10,9 @@ body {
   color: #22232b;
 }
 
+.logo {
+  cursor: pointer;
+}
 h1 {
   font-size: 24px;
   font-weight: 700;
@@ -24,7 +27,7 @@ a {
   text-decoration: none;
   color: #22232b;
 }
-
+/* Header */
 .header-container {
   background: #22232b;
   position: fixed;
@@ -34,7 +37,7 @@ a {
 }
 
 nav {
-  padding: 23px 14px;
+  padding: 15px 14px;
 }
 
 ul {
@@ -61,10 +64,174 @@ li {
   background-color: #fff;
 }
 
+/* Main */
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 140px 60px 40px 140px;
+}
+
+.server-section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px 35px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 20px;
+  column-gap: 50px;
+    row-gap: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+}
+
+.item1 {
+  grid-column: 1/3;
+  position: relative;
+}
+
+.item {
+  grid-column: 1fr;
+  position: relative;
+}
+
+.input-select {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #bdcdd5;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  appearance: none;
+    outline: none;
+}
+
+.input-label {
+  position: absolute;
+  z-index: 1;
+  background: #fff;
+  font-size: 11px;
+  font-weight: lighter;
+  padding: 0 8px;
+  top: -8px;
+  left: 60px;
+  color: #22232b;
+}
+
+.select-icon {
+  position: absolute;
+  top: 30%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-icon2 {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.select-icon i {
+  font-size: 16px;
+  color: #20a8d8;
+}
+.select-icon2 i {
+  font-size: 16px;
+  color: #20a8d8;
+}
+
+.flex {
+  display: flex;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.link {
+  color: #20a8d8;
+  margin: 20px 0;
+  font-size: 13px;
+}
+
+.link a {
+  color: #20a8d8;
+  text-decoration: none;
+    border-bottom: 1px solid #20a8d8;
+    padding-bottom: 3px;
+    display: inline-block;
+}
+
+.text1 {
+  font-size: 14px;
+  padding: 10px 0 20px 0;
+}
+
+.price {
+  padding: 10px 0 0 50px;
+  position: relative;
+    display: inline-block;
+  }
+  
+  .underline {
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 10;
+    width: 70%;
+    border-bottom: 1px dashed #20a8d8;
+}
+span {
+  font-size: 24px;
+  font-weight: 700;
+  padding-right: 5px;
+}
+
+button {
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 2px solid #20a8d8;
+  padding: 8px 100px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  align-self: self-start;
+}
+
+.btn.active {
+  border-color: #20a8d8;
+  background-color: #20a8d8;
+  color: white;
+}
+/* footer */
 footer {
   background: #fff;
   margin-left: 60px;
-  padding: 70px 90px 80px 90px;
+  padding: 90px;
   display: flex;
   flex-direction: column;
 }
@@ -86,7 +253,7 @@ ul {
 
 .info {
   gap: 20px;
-  margin: 40px 0;
+  margin: 30px 0;
   font-size: 16px;
 }
 
@@ -108,6 +275,60 @@ ul {
   padding: 0.8rem;
 }
 
-span {
-  padding: 10px;
+/* .IP-address-section  */
+.IP-address-section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px 35px;
+}
+
+.text2 {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.question-mark {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  color: #20a8d8;
+}
+
+.fa-solid.fa-question {
+  background-color: #20a8d8;
+  color: #fff;
+  border-radius: 15px;
+  margin-left: 3px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  text-align: center;
+  line-height: 15px;
+  font-size: 11px;
+}
+
+.fireware-section {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px 35px;
+}
+.price-info {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.text3 {
+  font-size: 13px;
+  padding: 10px 0 0 10px;
+}
+
+.for {
+  padding-left: 5px;
 }
