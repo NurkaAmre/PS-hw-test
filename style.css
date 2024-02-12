@@ -22,7 +22,9 @@ h1 {
   width: 30px;
   height: 30px;
 }
-
+.margin-icon {
+  margin-bottom: 50px;
+}
 a {
   text-decoration: none;
   color: #22232b;
@@ -188,11 +190,11 @@ li {
 
 .text1 {
   font-size: 14px;
-  padding: 10px 0 20px 0;
+  padding: 20px 0 25px 0;
 }
 
 .price {
-  padding: 10px 0 0 50px;
+  padding: 5px 0 0 50px;
   position: relative;
   display: inline-block;
   }
@@ -364,10 +366,10 @@ ul {
   .input-label {
     left: 40px;
   }
-
+/* 
   .price {
     padding: 10px 0 0 0;
-  }
+  */
 
   span {
     font-size: 18px;
@@ -432,13 +434,16 @@ ul {
   }
 
   .container {
-    margin: 100px 40px 40px 40px;
+    margin: 100px 30px 30px 40px;
   }
 
   .logo {
     height: 70px;
   }
 
+                                                                                                                                .margin-icon {
+                                                                                                                                  margin-bottom: 0;
+                                                                                                                                }
   nav {
     padding: 20px;
   }
