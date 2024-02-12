@@ -13,6 +13,7 @@ body {
 .logo {
   cursor: pointer;
 }
+
 h1 {
   font-size: 24px;
   font-weight: 700;
@@ -23,10 +24,15 @@ h1 {
   height: 30px;
 }
 
+.margin-icon {
+  margin-bottom: 50px;
+}
+
 a {
   text-decoration: none;
   color: #22232b;
 }
+
 /* Header */
 .header-container {
   background: #22232b;
@@ -49,6 +55,7 @@ ul {
 li {
   margin-bottom: 30px;
 }
+
 .hamburger-menu {
   width: 30px;
   height: 20px;
@@ -82,7 +89,7 @@ li {
   grid-template-columns: repeat(3, 1fr);
   padding-top: 20px;
   column-gap: 50px;
-    row-gap: 20px;
+  row-gap: 20px;
   font-size: 16px;
   font-weight: 600;
 }
@@ -115,7 +122,7 @@ li {
   font-weight: 600;
   cursor: pointer;
   appearance: none;
-    outline: none;
+  outline: none;
 }
 
 .input-label {
@@ -151,10 +158,12 @@ li {
   align-items: center;
   justify-content: center;
 }
+
 .select-icon i {
   font-size: 16px;
   color: #20a8d8;
 }
+
 .select-icon2 i {
   font-size: 16px;
   color: #20a8d8;
@@ -181,30 +190,31 @@ li {
 .link a {
   color: #20a8d8;
   text-decoration: none;
-    border-bottom: 1px solid #20a8d8;
-    padding-bottom: 3px;
-    display: inline-block;
+  border-bottom: 1px solid #20a8d8;
+  padding-bottom: 3px;
+  display: inline-block;
 }
 
 .text1 {
   font-size: 14px;
-  padding: 10px 0 20px 0;
+  padding: 20px 0 25px 0;
 }
 
 .price {
-  padding: 10px 0 0 50px;
+  padding: 5px 0 0 50px;
   position: relative;
-    display: inline-block;
-  }
-  
-  .underline {
-    display: block;
-    position: absolute;
-    bottom: -2px;
-    left: 10;
-    width: 70%;
-    border-bottom: 1px dashed #20a8d8;
+  display: inline-block;
 }
+
+.underline {
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 10;
+  width: 70%;
+  border-bottom: 1px dashed #20a8d8;
+}
+
 span {
   font-size: 24px;
   font-weight: 700;
@@ -227,6 +237,7 @@ button {
   background-color: #20a8d8;
   color: white;
 }
+
 /* footer */
 footer {
   background: #fff;
@@ -241,11 +252,6 @@ footer p {
   color: #3e515b;
 }
 
-ul {
-  list-style: none;
-  display: flex;
-}
-
 .info,
 .media {
   flex-direction: row;
@@ -255,11 +261,6 @@ ul {
   gap: 20px;
   margin: 30px 0;
   font-size: 16px;
-}
-
-.icon {
-  width: 30px;
-  height: 30px;
 }
 
 .media {
@@ -317,6 +318,7 @@ ul {
   border-radius: 10px;
   padding: 30px 35px;
 }
+
 .price-info {
   display: flex;
   align-items: center;
@@ -331,4 +333,139 @@ ul {
 
 .for {
   padding-left: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    margin: 100px 40px 40px 100px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    font-size: 12px;
+  }
+
+  .grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item1 {
+    grid-column: 1/1;
+  }
+
+  .item {
+    grid-column: 1fr;
+  }
+
+  .input-select {
+    font-size: 14px;
+  }
+
+  .input-label {
+    left: 40px;
+  }
+
+  /*
+  .price {
+    padding: 10px 0 0 0;
+  */
+
+  span {
+    font-size: 18px;
+  }
+
+  .btn {
+    margin-top: 20px;
+    padding: 8px 60px;
+  }
+
+  .footer {
+    padding: 40px;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .media li {
+    margin: 10px 0;
+  }
+
+  .IP-address-section {
+    padding: 30px 20px;
+  }
+
+  .fireware-section {
+    padding: 30px 20px;
+  }
+
+  .text3 {
+    padding: 10px 0 0 0;
+  }
+
+  .price-info {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .price-info .btn {
+    margin-top: 20px;
+    align-self: center;
+  }
+
+  .price-info p {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header-container {
+    background: #22232b;
+    display: flex;
+    z-index: 100;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+  }
+
+  .container {
+    margin: 100px 30px 30px 40px;
+  }
+
+  .logo {
+    height: 70px;
+  }
+
+  .margin-icon {
+    margin-bottom: 0;
+  }
+
+  nav {
+    padding: 20px;
+  }
+
+  ul {
+    flex-direction: row-reverse;
+    gap: 20px;
+    align-items: center;
+    justify-self: center;
+  }
+
+  footer {
+    margin-left: 0;
+    padding: 40px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .info {
+    margin: 10px 0;
+  }
 }
